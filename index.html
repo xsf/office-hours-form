@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-		<head>
-					<meta charset="utf-8">
-					<title>XMPP Office Hours Signup</title>
-					<link rel="stylesheet" href="main.css">
-		</head>
-		<body>
+	<head>
+		<meta charset="utf-8">
+		<title>XMPP Office Hours Signup</title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<main>
 			<h1>
 				XMPP Office Hours
 			</h1>
@@ -18,31 +19,7 @@
 			When we receive your submission we will follow up at the given email and
 			JID to finalize the time and get you on the schedule.
 			</p>
-			<form name="signup" method="POST" netlify>
-				<label for="title">Title</label>
-				<input type="text" name="title">
-				<label for="presenter">Presenters Name</label>
-				<input type="text" name="presenter">
-				<label for="jid">Email or JID</label>
-				<input type="email" name="jid">
-				<label for="type">Type</label>
-				<select name="type">
-					<option value="presentation">Presentation</option>
-					<option value="discussion">Round Table Discussion</option>
-					<option value="panel">Panel Discussion</option>
-					<option value="other">Other</option>
-				</select>
-				<label for="when">Desired Date/Time</label>
-				<input type="datetime-local" name="when">
-				<p>
-					<label for="slides">My presentation will use slides</label>
-					<input type="checkbox" name="slides">
-				</p>
-				<p class="hidden">
-					<label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-				</p>
-
-				<button type="submit">Submit</button>
-			</form>
-		</body>
+			<iframe src="/form.html" width="900" height="500"></iframe>
+		</main>
+	</body>
 </html>
