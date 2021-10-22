@@ -1,0 +1,27 @@
+body {
+	max-width: 900px;
+	width: 100vw;
+	padding: 1rem;
+	margin: 0 auto;
+}
+
+.hidden {
+	display: none;
+}
+
+input:invalid {
+	background-color: pink;
+}
+
+form label, form input, form select {
+	margin-bottom: 1rem;
+}
+
+form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+form p, form button {
+	grid-column-end: span 2;
+}
